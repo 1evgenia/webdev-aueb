@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body,html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: fixed;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+}
+
+.menu {
+    width: 70%;
+    position: relative;
+    display: flex;
+}
+
+.menu > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;  
+}
+
+.menu li {
+    list-style: none;
+    line-height: 40px;
+}
+
+.menu a {
+    width: 25%;
+    list-style: none;
+    text-decoration: none;
+    color: silver;
+    font-size: x-large;
+}
+
+.menu a:hover{
+    color:  #c19a6b;
+}
+
+.menu > ul ul {
+    display: none;
+}
+
+.menu > ul > li:hover > ul {
+    display:block;
+    background-color: black;
+    width: 160px;
+    position: absolute;
+    top: 40px;
+}
+
+.toggle-button {
+    width: 55%;
+    display: none;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.toggle-button > button {
+    width: 60px;
+    height: 60px;
+}
+
+.toggle-menu {
+    display: none;
+    padding-top: 80px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.toggle-menu li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.toggle-menu > ul > li > a {
+    font-size: 26px;
+    color: black;
+}
+
+.toggle-menu > ul > li {
+    padding-top: 20px;
+    background-color: #584A44;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-image: url("C:/WebDevelopment/webdev-aueb/image/photo2222.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}  
+
+.title {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-family: 'Tenor Sans';
+    color: black;
+}
+
+.title-name {
+    font-size: 40px;
+}
+
+.title-brand {
+    font-size: 55px;
+}
+
+
+.main-text {
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    font-family: 'Roboto slab', serif;
+    font-size: 20px;
+    color: black;
+}
+
+.phone-text {
+    text-align: center;
+    font-family: 'Roboto slab', serif;
+    font-size: 30px;
+    color: black;
+}
+
+.salon {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #504440;
+}
+
+.mySlides {
+    display: none;
+}
+
+.title-salon {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Tenor Sans';
+    color: black;
+    font-size: 40px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position:absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.numbertext {
+    color: silver;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 9.09%;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+.contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: silver;
+    background-color: black;
+    font-size: larger; 
+}
+
+.contact-information {
+    width: 30%;
+    float: left;   
+}
+
+.Hours {
+    width: 35%;
+    display: table;  
+    line-height: 2em; 
+}
+
+table {
+    border-spacing: 10px 10px;
+}
+
+.contact-us {
+    width: 30%;
+}
+
+   
+input[type="Name"] {
+    height: 30px;
+    width: 250px;
+    }
+
+ input[type="email"] {
+     height: 30px;
+     width: 250px;
+    }  
+
+input[type="text"] {
+    padding-bottom: 100px;
+    width: 250px;
+    }
+
+button {
+    width: 80px;
+    height: 30px;
+    border-radius: 12px;
+    color: black;
+    text-align: center;   
+    }
+
+.map {
+    padding-top: 20px;
+    background-color: black;   
+}
+.map > h3 {
+    text-align: center;
+    color: silver;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border: 1px solid silver;
+}
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    overflow: hidden;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    color: silver;
+    }
+
+.copyright {
+    width: 85%;
+    float: left;
+    }
+
+.copyright>p {
+    font-size: 12px;
+    }
+
+ .social {
+    width: 15%;
+    float: right;
+    display: flex;
+    align-items: center;
+ }
+
+
+.social>p {
+    margin-right: 10px;
+    font-size: 0.8rem;
+   
+}
+
+.fab {
+    font-size: 30px;
+    color: silver;
+    margin-right: 5px;
+} 
+
+.fab:hover {
+    transform: scale(1.5);
+}
+
+
+@media (max-width: 992px) {
+    .toggle-button {
+        display: flex;
+    }
+    .menu {
+        display: none;
+    }
+    .phone-text {
+        padding-bottom: 50px;
+    }
+
+    .demo {
+        height: 80px;
+    }
+    .contact {
+        font-size: 18px;
+    }
+     .map>h3 {
+         font-size: 18px;
+     }
+
+     iframe {
+         height: 230px;
+     }
+}
+
+
+@media (max-width: 768px) {
+    .logo >img {
+        width: auto;
+        height: 75px;
+    }
+    
+    .title-name  {
+        font-size: 30px;
+    }
+
+    .title-brand  {
+        font-size: 36px;
+    }
+    .main-text {
+        font-size: 18px;
+    }
+
+    .phone-text {
+        font-size: 22px;
+    }
+
+    .contact-information {
+        font-size: 18px;
+    }
+    .Hours {
+        font-size: 18px;
+    }
+    .contact-us {
+        font-size: 18px;
+    }
+
+    .contact-form {
+        width: 50px;
+    }
+    
+    input[type="Name"] {
+        height: 30px;
+        width: 180px;
+        }
+    
+     input[type="email"] {
+         height: 30px;
+         width: 180px;
+        }  
+    
+    input[type="text"] {
+        padding-bottom: 100px;
+        width: 180px;
+        }
+    
+    button {
+        width: 60px;
+        height: 30px;
+        font-size: 11px;
+        border-radius: 12px;   
+    }
+}
+
+@media (max-width: 576px) {
+    .header{
+        height:80px ;
+    }
+
+    .logo >img {
+        width: auto;
+        height: 80px;
+    }
+
+    .title {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .title-name {
+        font-size: 24px;
+    }
+
+    .title-brand {
+        font-size: 28px;
+    }
+
+    .main-text{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .toggle-button > button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-text  {
+        font-size: 14px;
+    }
+
+    .phone-text {
+        font-size: 16px;
+    }
+
+    .title-salon {
+        font-size:24px;
+    }
+
+    .contact-information {
+        font-size: 14px;
+    }
+
+    .Hours {
+        font-size: 14px;
+    }
+    .contact-us {
+        font-size: 14px;
+    }
+
+    input[type="Name"] {
+        height: 30px;
+        width: 150px;
+        }
+    
+     input[type="email"] {
+         height: 30px;
+         width: 150px;
+        }  
+    
+    input[type="text"] {
+        padding-bottom: 100px;
+        width: 150px;
+        }
+
+        button {
+            width: 60px;
+            height: 30px;
+            font-size: 10px;
+            border-radius: 12px;   
+        }
+
+        .map>h3 {
+            font-size: 14px;
+        }
+    iframe {
+        height: 150px;
+    }
+    .demo {
+        height: 50px;
+    }
+
+    .social {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .social > p {
+        margin-right: 12px ;
+       
+    }
+}
+
+@media (max-width: 420px) {
+    .logo >img {
+        width: auto;
+        height: 50px;
+    }
+    .toggle-button > button {
+        width: 35px;
+        height: 35px;
+    }
+    .title-name {
+        font-size: 14px;
+    }
+
+    .title-brand {
+        font-size: 20px;
+    }
+    
+    .main-text  {
+        font-size: 12px;
+    }
+
+    .phone-text {
+        font-size: 14px;
+    }
+
+    .contact-information {
+        font-size: 12px;
+    }
+
+    .Hours {
+        font-size: 11px;
+        padding-right: 10px;
+    }
+
+    .Hours> table {
+        width: 50%;
+    }
+    .contact-us {
+        font-size: 12px;
+    }
+
+    input[type="Name"] {
+        height: 30px;
+        width: 150px;
+        }
+    
+     input[type="email"] {
+         height: 30px;
+         width: 120px;
+        }  
+    
+    input[type="text"] {
+        padding-bottom: 100px;
+        width: 120px;
+        }
+
+        button {
+            width: 50px;
+            height: 30px;
+            font-size: 10px;
+            border-radius: 12px;   
+        }
+
+    .copyright >p {
+        font-size: 10px;
+    }
+    .social > p {
+        font-size: 12px;
+    }
+}
+
+
+
